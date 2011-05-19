@@ -100,6 +100,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Human.cs" />
     <Compile Include="Models\League.cs" />
     <Compile Include="Models\Manager.cs" />
     <Compile Include="Models\Player.cs" />
@@ -111,6 +112,7 @@
     <Content Include="Global.asax" />
     <Content Include="hibernate.cfg.xml">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="Models\League.hbm.xml">
       <SubType>Designer</SubType>
@@ -118,8 +120,7 @@
     <EmbeddedResource Include="Models\Team.hbm.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Models\Player.hbm.xml" />
-    <EmbeddedResource Include="Models\Manager.hbm.xml">
+    <EmbeddedResource Include="Models\Human.hbm.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
@@ -169,7 +170,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>32923</DevelopmentServerPort>
+          <DevelopmentServerPort>24468</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

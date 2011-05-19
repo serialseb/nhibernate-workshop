@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using Eq1.App1.Model;
 using NHibernate;
+using NHibernate.Criterion;
 using NHibernate.Linq;
 
 namespace Ex_App1.Controllers
@@ -26,30 +27,43 @@ namespace Ex_App1.Controllers
         }
         public ActionResult Index()
         {
+            return View();
+        }
+        public ActionResult CreateLeague()
+        {
             using (var tx = MvcApplication.NHibernateSession.BeginTransaction())
             {
 
-                var realMadrid = new Team("Real Madrid")
-                                     {
-                                         Players = GeneratePlayers()
-                                     };
-                var barcelona = new Team("Barcelona")
-                                    {
-                                        Players = GeneratePlayers(),
-                                        Manager = new Manager
-                                                      {
-                                                          FullName = "John Doe"
-                                                      }
-                                    };
+                var realMadrid = new Team("Real Madrid");
+                realMadrid.SignPlayers(GeneratePlayers());
 
+                var barcelona = new Team("Barcelona")
+                {
+                    Fixtures =
+                        {
+                            { DateTime.Today, "Kingston" },
+                            { DateTime.Today.AddDays(1), "Dublin" }
+                        },
+                    Manager = new Manager
+                                    {
+                                        FullName = "John Doe"
+                                    }
+                };
+                barcelona.SignPlayers(GeneratePlayers());
                 MvcApplication.NHibernateSession.Save(new League
                 {
                     Name = "La ligua",
-                    Teams = { realMadrid, barcelona }
+                    Teams = { realMadrid, barcelona },
+                    TopScorers = { realMadrid.Players.First(), barcelona.Players.First() },
+                    AuthorizedPersonel =
+                        {
+                            new Manager{FullName="Agassi", Salary = 20000},
+                            new Player{FullName="Roonie wearing heels"}
+                        }
                 });
                 tx.Commit();
             }
-            return View();
+            return View("Index");
         }
 
         private ICollection<Player> GeneratePlayers()
@@ -58,21 +72,59 @@ namespace Ex_App1.Controllers
         }
         public ActionResult Everything()
         {
-            using(var tx = MvcApplication.NHibernateSession.BeginTransaction())
+            var s = MvcApplication.NHibernateSession;
+            using(var tx = s.BeginTransaction())
             {
-                foreach (var league in MvcApplication.NHibernateSession.QueryOver<League>().List<League>())
-                    Console.WriteLine(league.Name);
-                        //foreach (var player in team.Players)
-                        //    Debug.WriteLine(player.FullName);
+                var q = s.Query<Team>().Fetch(x => x.Manager)
+                    .FetchMany(x => x.Players).ThenFetch(p => p.Team);
+                
+                var result = (
+                    from human in s.Query<Human>()
+                              where human.FullName.StartsWith("W")
+                              select new HumanViewModel{
+                                  Name = human.FullName
+                              }).ToList();
+                Debug.WriteLine(result.Count());
+                tx.Commit();
             }
             return View("Index");
         }
-        public ActionResult FirePlayer(int id)
+        public ActionResult Leagues()
+        {
+            var s = MvcApplication.NHibernateSession;
+            using (var tx = s.BeginTransaction())
+            {
+                var allAuthorized = from league in s.Query<League>()
+                                    from personel in league.AuthorizedPersonel
+                                    select personel.FullName;
+                Console.WriteLine(allAuthorized.ToList().Count());
+                tx.Commit();
+            }
+            return View("Index");
+        }
+
+        public ActionResult HirePlayer(int id)
+        {
+
+            using (var tx = MvcApplication.NHibernateSession.BeginTransaction())
+            {
+                var team = MvcApplication.NHibernateSession.Get<Team>(id);
+                team.Hire(new Player
+                              {
+                                  FullName = "Jean Dupont"
+                              });
+                   
+                tx.Commit();
+            }
+            return View("Index");
+        }
+        public ActionResult SackPlayers(int id)
         {
             using(var tx = MvcApplication.NHibernateSession.BeginTransaction())
             {
                 var team = MvcApplication.NHibernateSession.Get<Team>(id);
-                team.Players.Clear();
+                
+                team.Sack(team.Players.Last());
                 tx.Commit();
                 return View("TeamsWithPlayers", new List<Team> {team});
             }
@@ -91,5 +143,10 @@ namespace Ex_App1.Controllers
         {
             return View();
         }
+    }
+
+    public class HumanViewModel
+    {
+        public string Name { get; set; }
     }
 }

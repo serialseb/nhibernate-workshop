@@ -57,7 +57,9 @@ namespace Ex_App1
                     "hibernate.cfg.xml"))
                 .BuildSessionFactory();
 
+            //new SchemaExport(cfg).Execute(true, true, true);
             new SchemaUpdate(cfg).Execute(true, true);
+
         }
     }
 }

@@ -7,16 +7,27 @@
 		   table="Leagues">
 
     <id name="Id">
-      <generator class="identity"/>
+      <generator class="hilo"/>
     </id>
     <property name="Name"/>
 
-    <set name="Teams" cascade="save-update"
-			 table="Teams" batch-size="999" lazy="false">
+    <set name="Teams" cascade="save-update" batch-size="999" lazy="false">
 
       <key column ="LeagueId"/>
       <one-to-many class="Team"/>
     </set>
+
+    <set name="AuthorizedPersonel" cascade="save-update" table="AuthorizedPersonels">
+      <key column="LeagueId" />
+      <many-to-many class="Human" column="HumanId" />
+    </set>
+    
+    <list name="TopScorers" table="TopScorers">
+      <key column="LeagueId" />
+      <index column="Position" type="System.Int32" />
+      <many-to-many class="Player" column="PlayerID" />
+      <!--<one-to-many class="Player" />-->
+    </list>
     
     
     

@@ -7,9 +7,12 @@
 		   table="Players">
 
     <id name="Id">
-      <generator class="identity"/>
+      <generator class="hilo"/>
     </id>
     <property name="FullName"/>
-
+    <many-to-one 
+      class="Team" 
+      name="Team" 
+      column="TeamId" />
   </class>
 </hibernate-mapping>

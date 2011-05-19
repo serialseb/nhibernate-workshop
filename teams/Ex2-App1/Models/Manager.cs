@@ -1,8 +1,7 @@
 namespace Eq1.App1.Model
 {
-    public class Manager
+    public class Manager : Human
     {
-        public virtual int Id { get; set; }
-        public virtual string FullName { get; set; }
+        public virtual int Salary { get; set; }
     }
 }

@@ -7,17 +7,23 @@
 		   table="Teams">
 
     <id name="Id">
-      <generator class="identity"/>
+      <generator class="hilo"/>
     </id>
     <property name="Name" />
     <property name="CreationTime" update="false" />
     <property name="PlayerCount" formula="(select count(*) from [Players])" />
-    <set name="Players" table="Players" cascade="all-delete-orphan">
-      <key column="TeamId"/>
+    <set name="Players" table="Players"
+         cascade="save-update"  inverse="true" lazy="extra"
+         >
+      <key column="TeamId" />
       
-      <one-to-many class ="Player"   />
+      <one-to-many class ="Player" />
     </set>
-
+    <map name="Fixtures" table="TeamFixtures">
+      <key column="TeamId" />
+      <index column="Date" type="System.DateTime" />
+      <element column="Location" type="System.String" />
+    </map>
     <many-to-one name="Manager"
                  cascade="save-update"
                  unique="true"

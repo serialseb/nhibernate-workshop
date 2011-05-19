@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping 
+  xmlns="urn:nhibernate-mapping-2.2"
+				   assembly="Ex-App1"
+				   namespace="Eq1.App1.Model">
+  <class name="Human"
+				 abstract="true"
+				 table="Humans">
+    <id name="Id">
+      <generator class="hilo"/>
+    </id>
+    <property name="FullName" />
+    <joined-subclass
+			table="Managers"
+			name="Manager">
+      <key column="HumanId"/>
+      <property name="Salary"/>
+    </joined-subclass>
+
+    <joined-subclass
+			table="Players"
+			name="Player">
+      <key column="HumanId"/>
+    </joined-subclass>
+  </class>
+</hibernate-mapping>

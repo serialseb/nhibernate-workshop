@@ -1,9 +1,7 @@
 namespace Eq1.App1.Model
 {
-    public class Player
+    public class Player : Human
     {
-
-        public virtual int Id { get; set; }
-        public virtual string FullName { get; set; }
+        public virtual Team Team { get; set; }
     }
 }
