@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping 
+  xmlns="urn:nhibernate-mapping-2.2"
+				   assembly="Ex-App1"
+				   namespace="Eq1.App1.Model">
+  <class name="Team"
+		   table="Teams">
+
+    <id name="Id">
+      <generator class="identity"/>
+    </id>
+    <property name="Name" />
+    <property name="CreationTime" update="false" />
+    <property name="PlayerCount" formula="(select count(*) from [Players])" />
+    <set name="Players" table="Players" cascade="all-delete-orphan">
+      <key column="TeamId"/>
+      
+      <one-to-many class ="Player"   />
+    </set>
+
+    <many-to-one name="Manager"
+                 cascade="save-update"
+                 unique="true"
+                 fetch="join">
+      <column name="ManagerId" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

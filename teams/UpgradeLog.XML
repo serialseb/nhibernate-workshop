@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Ex2-App1">
+</Property><Property Name="Solution File" Value="C:\src\nhibernate\Exercises\Ex2-App1\Ex2-App1.sln">
+</Property><Property Name="User Options File" Value="C:\src\nhibernate\Exercises\Ex2-App1\Ex2-App1.suo">
+</Property><Property Name="Date" Value="29 March 2011">
+</Property><Property Name="Time" Value="10:52">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Ex2-App1.sln" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Ex2-App1.suo" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1.suo">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Ex2-App1.csproj" Description="Project file successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Ex2-App1.csproj">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Ex2-App1.csproj.user" Description="Project user file successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Ex2-App1.csproj.user">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Controllers\HomeController.cs" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Controllers\HomeController.cs">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Default.aspx.cs" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Default.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Global.asax.cs" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Global.asax.cs">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Models\Blog.cs" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Models\Blog.cs">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Models\Category.cs" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Models\Category.cs">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Models\Comment.cs" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Models\Comment.cs">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Models\Post.cs" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Models\Post.cs">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Models\Tag.cs" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Models\Tag.cs">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Models\User.cs" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Models\User.cs">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Default.aspx" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Default.aspx">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Global.asax" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Global.asax">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\hibernate.cfg.xml" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\hibernate.cfg.xml">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Web.config" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Web.config">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Content\Site.css" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Content\Site.css">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Scripts\jquery-1.2.6.js" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Scripts\jquery-1.2.6.js">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Scripts\jquery-1.2.6.min.js" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Scripts\jquery-1.2.6.min.js">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Scripts\jquery-1.2.6-vsdoc.js" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Scripts\jquery-1.2.6-vsdoc.js">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Scripts\jquery-1.2.6.min-vsdoc.js" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Scripts\jquery-1.2.6.min-vsdoc.js">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Scripts\MicrosoftAjax.js" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Scripts\MicrosoftAjax.js">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Scripts\MicrosoftAjax.debug.js" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Scripts\MicrosoftAjax.debug.js">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Scripts\MicrosoftMvcAjax.js" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Scripts\MicrosoftMvcAjax.js">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Scripts\MicrosoftMvcAjax.debug.js" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Scripts\MicrosoftMvcAjax.debug.js">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Views\Home\About.aspx" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Views\Home\About.aspx">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Views\Home\Index.aspx" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Views\Home\Index.aspx">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Views\Shared\Error.aspx" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Views\Shared\Error.aspx">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Views\Shared\LogOnUserControl.ascx" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Views\Shared\LogOnUserControl.ascx">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Views\Shared\Site.Master" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Views\Shared\Site.Master">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Views\Web.config" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Views\Web.config">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Models\Blog.hbm.xml" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Models\Blog.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Models\Category.hbm.xml" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Models\Category.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Models\Comment.hbm.xml" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Models\Comment.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Models\Post.hbm.xml" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Models\Post.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Models\Tag.hbm.xml" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Models\Tag.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Models\User.hbm.xml" Description="File successfully backed up as C:\src\nhibernate\Exercises\Ex2-App1\Backup\Ex2-App1\Models\User.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Ex2-App1.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Ex2-App1" Source="Ex2-App1\Ex2-App1.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Ex2-App1.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Ex2-App1.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Ex2-App1" Source="Ex2-App1\Ex2-App1.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
