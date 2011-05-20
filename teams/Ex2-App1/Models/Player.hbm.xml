@@ -12,6 +12,12 @@
     <property name="FullName"/>
     <property name="Salary" />
     <property name="Age" />
+
+    <component name="Address">
+
+      <property name="Line1" column="AddressLine1" />
+      <property name="Line2" column="AddressLine2" />
+    </component>
     <many-to-one 
       class="Team" 
       name="Team" 
@@ -19,6 +25,16 @@
   <filter name="retirementAge" condition="Age &lt;= :age" />
   </class>
 
+
+
+
+  <sql-query name="test">
+    
+    <query-param name="playerId" type="System.Int32"/>
+    <return class="Player" />
+    select * from Players where Id=:playerId
+  </sql-query>
+  
   <filter-def name="retirementAge">
     <filter-param name="age" type="System.Int32"/>
   </filter-def>

@@ -123,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Models\Manager.hbm.xml" />
     <EmbeddedResource Include="Models\Player.hbm.xml" />
+    <EmbeddedResource Include="Models\Payments.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
@@ -170,7 +173,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>24468</DevelopmentServerPort>
+          <DevelopmentServerPort>15950</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

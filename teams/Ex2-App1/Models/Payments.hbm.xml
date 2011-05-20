@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping 
+  xmlns="urn:nhibernate-mapping-2.2"
+				   assembly="Ex-App1"
+				   namespace="Eq1.App1.Model">
+  <class name="CreditCardDetails"
+		   table="CreditCardDEtails">
+
+    <id name="Id">
+      <generator class="hilo"/>
+    </id>
+    <property name="IsValid" />
+    <property name="Number" />
+  </class>
+  <class name="DirectDebitDetails" table="DirectDebitDetails">
+    <id name="Id">
+      <generator class="hilo"/>
+    </id>
+    <property name="AccountNumber"/>
+    <property name="IsValid" />
+  </class>
+</hibernate-mapping>

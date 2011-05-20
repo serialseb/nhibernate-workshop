@@ -5,14 +5,14 @@
 				   namespace="Eq1.App1.Model">
   <class name="League"
 		   table="Leagues">
-
+    <cache usage="read-write" />
     <id name="Id">
       <generator class="hilo"/>
     </id>
     <property name="Name"/>
 
-    <set name="Teams" cascade="save-update" batch-size="999" lazy="false">
-
+    <set name="Teams" cascade="save-update" batch-size="999" lazy="false" >
+      <cache usage="nonstrict-read-write" />
       <key column ="LeagueId"/>
       <one-to-many class="Team"/>
     </set>
@@ -28,8 +28,12 @@
       <many-to-many class="Player" column="PlayerID" />
       <!--<one-to-many class="Player" />-->
     </list>
-    
-    
+
+
+    <dynamic-component name="Tokens">
+      <property name="TOKEN_MD5" type="System.String" />
+      <property name="TOKEN_SHA256" type="System.String" />
+    </dynamic-component>
     
     
     

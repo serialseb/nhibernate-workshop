@@ -9,7 +9,8 @@ namespace Eq1.App1.Model
         {
             Teams = new HashSet<Team>();
             TopScorers = new List<Player>();
-          //  AuthorizedPersonel = new List<Human>();
+            Tokens = new Dictionary<string, string>();
+
         }
 
         //public virtual ICollection<Human> AuthorizedPersonel { get; set; }
@@ -19,5 +20,7 @@ namespace Eq1.App1.Model
         public virtual int Id { get; set; }
         public virtual string Name { get; set; }
         public virtual ICollection<Team> Teams { get; set; }
+
+        public virtual IDictionary<string, string> Tokens { get; set; }
     }
 }

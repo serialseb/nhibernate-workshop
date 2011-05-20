@@ -14,7 +14,7 @@ namespace Ex_App1
 {
     public class MvcApplication : System.Web.HttpApplication
     {
-        private static ISessionFactory _sessionFactory;
+        public static ISessionFactory _sessionFactory;
 
         public static void RegisterRoutes(RouteCollection routes)
         {

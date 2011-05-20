@@ -30,6 +30,17 @@ namespace Ex_App1.Controllers
         {
             return View();
         }
+        public ActionResult ViewLeague(int id)
+        {
+            var s = MvcApplication.NHibernateSession;
+            using (var tx = s.BeginTransaction())
+            {
+                var league = s.Get<League>(id);
+                Console.WriteLine(league.Tokens["TOKENS_MD5"]);
+                return J(league);
+            }
+        }
+
         public ActionResult CreateLeague()
         {
             using (var tx = MvcApplication.NHibernateSession.BeginTransaction())
@@ -48,6 +59,11 @@ namespace Ex_App1.Controllers
                     Manager = new Manager
                                     {
                                         FullName = "John Doe"
+                                    },
+                                    PaymentDetails = new DirectDebitDetails
+                                    {
+                                       AccountNumber = "21",
+                                       IsValid = true
                                     }
                 };
                 barcelona.SignPlayers(GeneratePlayers());
@@ -69,7 +85,16 @@ namespace Ex_App1.Controllers
 
         private ICollection<Player> GeneratePlayers()
         {
-            return Enumerable.Range(0, 13).Select(x => new Player { FullName = "Well Paid " + x }).ToList();
+            return Enumerable.Range(0, 13).Select(x => 
+                new Player
+                    {
+                        FullName = "Well Paid " + x,
+                        Address =
+                            {
+                                Line1 = "Somewhere...",
+                                Line2 = "...over the rainbow"
+                            }
+                    }).ToList();
         }
         public ActionResult Everything()
         {
@@ -104,13 +129,35 @@ namespace Ex_App1.Controllers
             }
             return View("Index");
         }
+        public ActionResult ChangeTeamName(int id, string name)
+        {
+            Team t;
+            using (var tempSession = MvcApplication._sessionFactory.OpenSession())
+            {
+                t = tempSession.Load<Team>(65537);
+            }
+            var s = MvcApplication.NHibernateSession;
+            
+            using (var tx = s.BeginTransaction())
+            {
+                //var team = s.Get<Team>(id);
+                s.Merge(t);
+                //s.Lock(team, LockMode.None);
+
+
+                t.Name = name;
+
+                tx.Commit();
+            }
+            return J("done");
+        }
 
         public ActionResult HirePlayer(int id)
         {
-
-            using (var tx = MvcApplication.NHibernateSession.BeginTransaction())
+            var s = MvcApplication.NHibernateSession;
+            using (var tx = s.BeginTransaction())
             {
-                var team = MvcApplication.NHibernateSession.Get<Team>(id);
+                var team = s.Get<Team>(id);
                 team.Hire(new Player
                               {
                                   FullName = "Jean Dupont"
@@ -131,7 +178,23 @@ namespace Ex_App1.Controllers
                 .JoinQueryOver<Manager>(x => x.Manager)
                 .Where(m => m.FullName == "John Doe");
                 
-
+        public ActionResult ExecuteSql()
+        {
+            var s = MvcApplication.NHibernateSession;
+            return J(s.GetNamedQuery("test").SetParameter("playerId", 0)
+                         .List<Player>());
+        }
+        public ActionResult ViewEverything()
+        {
+            var s = MvcApplication.NHibernateSession;
+            using(var tx = s.BeginTransaction())
+            {
+                var league = s.Get<League>(32768);
+                league.Name = "name at " + DateTime.Now.ToString();
+                tx.Commit();
+                return J("ok");
+            }
+        }
         public ActionResult ListPlayers(int id)
         {
             var s = MvcApplication.NHibernateSession;
@@ -164,7 +227,7 @@ namespace Ex_App1.Controllers
 
                 
 
-                return J(""
+                return J(s.Query<Player>().ToList()
                     //s.QueryOver<Team>()
                     //    .Where(Restrictions.Gt(Projections.SubQuery())
                     //myQuery2.GetExecutableQueryOver(s).List<Team>()

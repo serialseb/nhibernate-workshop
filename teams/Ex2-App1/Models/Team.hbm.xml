@@ -2,14 +2,19 @@
 <hibernate-mapping 
   xmlns="urn:nhibernate-mapping-2.2"
 				   assembly="Ex-App1"
-				   namespace="Eq1.App1.Model">
+				   namespace="Eq1.App1.Model" >
   <class name="Team"
-		   table="Teams">
-
+		   table="Teams" dynamic-update="true">
+    <cache usage="read-write"/>
     <id name="Id">
       <generator class="hilo"/>
     </id>
-    <property name="Name" />
+    <version name="Version" />
+    
+    
+    <property name="Name" optimistic-lock="true" />
+    
+    
     <property name="CreationTime" update="false" />
     <property name="PlayerCount" formula="(select count(*) from [Players])" />
     <set name="Players" table="Players"
@@ -19,6 +24,13 @@
       
       <one-to-many class ="Player" />
     </set>
+    <any name="PaymentDetails" id-type="System.Int32" meta-type="System.String" cascade="all">
+      <meta-value value="CreditCard" class="CreditCardDetails"/>
+      <meta-value value="DirectDebit" class="DirectDebitDetails"/>
+      <column name="PaymentType"/>
+      <column name="PaymentId"/>
+    </any>
+
     <map name="Fixtures" table="TeamFixtures">
       <key column="TeamId" />
       <index column="Date" type="System.DateTime" />
