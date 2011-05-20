@@ -13,7 +13,7 @@
     <property name="CreationTime" update="false" />
     <property name="PlayerCount" formula="(select count(*) from [Players])" />
     <set name="Players" table="Players"
-         cascade="save-update"  inverse="true" lazy="extra"
+         cascade="save-update"  lazy="extra" inverse="true"
          >
       <key column="TeamId" />
       

@@ -17,10 +17,10 @@
       <one-to-many class="Team"/>
     </set>
 
-    <set name="AuthorizedPersonel" cascade="save-update" table="AuthorizedPersonels">
+    <!--<set name="AuthorizedPersonel" cascade="save-update" table="AuthorizedPersonels">
       <key column="LeagueId" />
       <many-to-many class="Human" column="HumanId" />
-    </set>
+    </set>-->
     
     <list name="TopScorers" table="TopScorers">
       <key column="LeagueId" />

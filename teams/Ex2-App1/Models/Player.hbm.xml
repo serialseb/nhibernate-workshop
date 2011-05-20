@@ -10,6 +10,7 @@
       <generator class="hilo"/>
     </id>
     <property name="FullName"/>
+    <property name="Salary" />
     <many-to-one 
       class="Team" 
       name="Team" 

@@ -9,10 +9,10 @@ namespace Eq1.App1.Model
         {
             Teams = new HashSet<Team>();
             TopScorers = new List<Player>();
-            AuthorizedPersonel = new List<Human>();
+          //  AuthorizedPersonel = new List<Human>();
         }
 
-        public virtual ICollection<Human> AuthorizedPersonel { get; set; }
+        //public virtual ICollection<Human> AuthorizedPersonel { get; set; }
 
         public virtual IList<Player> TopScorers { get; set; }
 
