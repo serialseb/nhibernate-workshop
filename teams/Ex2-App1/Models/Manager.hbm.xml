@@ -10,6 +10,6 @@
       <generator class="identity"/>
     </id>
     <property name="FullName" />
-    
+    <filter name="retirementAge" condition="0 &gt; :age" />
   </class>
 </hibernate-mapping>

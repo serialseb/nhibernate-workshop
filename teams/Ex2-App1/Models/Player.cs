@@ -10,5 +10,6 @@ namespace Eq1.App1.Model
         public virtual Team Team { get; set; }
 
         public virtual int Salary { get; set; }
+        public virtual int Age { get; set; }
     }
 }
