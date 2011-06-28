@@ -6,5 +6,7 @@ namespace ShoppingCartWeb.Models
     {
         public virtual int Id { get; set; }
         public virtual DateTime StartTime { get; set; }
+
+        public virtual DateTime LastModified { get; set; }
     }
 }

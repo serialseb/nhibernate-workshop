@@ -8,5 +8,6 @@
 			<generator class="identity"/>
 		</id>
     <property name="StartTime" />
+    <property name="LastModified" />
 	</class>
 </hibernate-mapping>

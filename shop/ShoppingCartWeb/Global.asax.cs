@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using HibernatingRhinos.Profiler.Appender.NHibernate;
 using NHibernate;
 using NHibernate.Cfg;
 using NHibernate.Tool.hbm2ddl;
@@ -77,7 +78,7 @@ namespace ShoppingCartWeb
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
-            //NHibernateProfiler.Initialize();
+            NHibernateProfiler.Initialize();
             var cfg = new Configuration();
             cfg.Configure(
                 Path.Combine(

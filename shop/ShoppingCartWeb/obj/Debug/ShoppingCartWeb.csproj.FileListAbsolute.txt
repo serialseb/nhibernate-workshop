@@ -24,3 +24,4 @@ C:\src\nhibernate-course\shop\ShoppingCartWeb\bin\NHibernate.ByteCode.Castle.xml
 C:\src\nhibernate-course\shop\ShoppingCartWeb\obj\Debug\ResolveAssemblyReference.cache
 C:\src\nhibernate-course\shop\ShoppingCartWeb\obj\Debug\ShoppingCartWeb.dll
 C:\src\nhibernate-course\shop\ShoppingCartWeb\obj\Debug\ShoppingCartWeb.pdb
+C:\src\nhibernate-course\shop\ShoppingCartWeb\bin\HibernatingRhinos.Profiler.Appender.v4.0.dll

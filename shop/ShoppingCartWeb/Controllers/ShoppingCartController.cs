@@ -18,6 +18,23 @@ namespace ShoppingCartWeb.Controllers
                 return Json(carts, JsonRequestBehavior.AllowGet);
             }
         }
+        public ActionResult AddProduct(int id, string productName)
+        {
+            var session = MvcApplication.NHibernateSession;
+            using (var tx = session.BeginTransaction())
+            {
+                var cart = session.Get<ShoppingCart>(id);
+                cart.LastModified = DateTime.Now;
+                session.Save(new ProductReservation
+                                 {
+                                     Cart = cart,
+                                     ProductName = productName
+                                 });
+
+                tx.Commit();
+                return Json(cart, JsonRequestBehavior.AllowGet);
+            }            
+        }
         public ActionResult CreateWithProduct(string productName)
         {
             var s = MvcApplication.NHibernateSession;
