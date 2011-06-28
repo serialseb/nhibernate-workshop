@@ -7,8 +7,12 @@
 		<id name="Id">
 			<generator class="identity"/>
 		</id>
-    <property name="ProductName" />
-    
+    <property name="Count" />
+
+    <many-to-one name="Product"
+                 class="Product"
+                 column="ProductId"
+                 cascade="save-update" />
 		<many-to-one name="Cart"
                  class="ShoppingCart"
                  column="CartId"

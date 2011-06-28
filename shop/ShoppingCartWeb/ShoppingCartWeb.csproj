@@ -77,6 +77,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductReservation.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,6 +104,7 @@
     </Content>
     <EmbeddedResource Include="Models\ProductReservation.hbm.xml" />
     <EmbeddedResource Include="Models\ShoppingCart.hbm.xml" />
+    <EmbeddedResource Include="Models\Product.hbm.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

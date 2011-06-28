@@ -24,11 +24,17 @@ namespace ShoppingCartWeb.Controllers
             using (var tx = session.BeginTransaction())
             {
                 var cart = session.Get<ShoppingCart>(id);
+                
                 cart.LastModified = DateTime.Now;
+                var product = session.QueryOver<Product>()
+                    .Where(x=>x.Name == productName)
+                    .SingleOrDefault()
+                    ?? new Product { Name = productName };
+
                 cart.Products.Add(new ProductReservation
-                                 {
-                                     Cart = cart,
-                                     ProductName = productName
+                                      {
+                                          Cart = cart,
+                                          Product = product
                                  });
 
                 tx.Commit();
@@ -47,7 +53,10 @@ namespace ShoppingCartWeb.Controllers
                 var product = new ProductReservation
                                   {
                                       Cart = cart,
-                                      ProductName = productName
+                                      Product = new Product
+                                                    {
+                                                        Name = productName
+                                                    }
                                   };
 
                 s.SaveOrUpdate(product);
