@@ -11,3 +11,16 @@ c:\src\nhibernate\shop\ShoppingCartWeb\bin\NHibernate.ByteCode.Castle.xml
 c:\src\nhibernate\shop\ShoppingCartWeb\obj\Debug\ResolveAssemblyReference.cache
 c:\src\nhibernate\shop\ShoppingCartWeb\obj\Debug\ShoppingCartWeb.dll
 c:\src\nhibernate\shop\ShoppingCartWeb\obj\Debug\ShoppingCartWeb.pdb
+C:\src\nhibernate-course\shop\ShoppingCartWeb\bin\hibernate.cfg.xml
+C:\src\nhibernate-course\shop\ShoppingCartWeb\bin\ShoppingCartWeb.dll
+C:\src\nhibernate-course\shop\ShoppingCartWeb\bin\ShoppingCartWeb.pdb
+C:\src\nhibernate-course\shop\ShoppingCartWeb\bin\Castle.Core.dll
+C:\src\nhibernate-course\shop\ShoppingCartWeb\bin\Iesi.Collections.dll
+C:\src\nhibernate-course\shop\ShoppingCartWeb\bin\NHibernate.ByteCode.Castle.dll
+C:\src\nhibernate-course\shop\ShoppingCartWeb\bin\NHibernate.dll
+C:\src\nhibernate-course\shop\ShoppingCartWeb\bin\Castle.Core.xml
+C:\src\nhibernate-course\shop\ShoppingCartWeb\bin\Iesi.Collections.pdb
+C:\src\nhibernate-course\shop\ShoppingCartWeb\bin\NHibernate.ByteCode.Castle.xml
+C:\src\nhibernate-course\shop\ShoppingCartWeb\obj\Debug\ResolveAssemblyReference.cache
+C:\src\nhibernate-course\shop\ShoppingCartWeb\obj\Debug\ShoppingCartWeb.dll
+C:\src\nhibernate-course\shop\ShoppingCartWeb\obj\Debug\ShoppingCartWeb.pdb
