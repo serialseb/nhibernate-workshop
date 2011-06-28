@@ -9,5 +9,9 @@
 		</id>
     <property name="StartTime" />
     <property name="LastModified" />
+    <set name="Products" cascade="all">
+      <key column="CartId" />
+      <one-to-many class="ProductReservation" />
+    </set>
 	</class>
 </hibernate-mapping>

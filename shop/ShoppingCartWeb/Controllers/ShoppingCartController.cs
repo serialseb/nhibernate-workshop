@@ -25,7 +25,7 @@ namespace ShoppingCartWeb.Controllers
             {
                 var cart = session.Get<ShoppingCart>(id);
                 cart.LastModified = DateTime.Now;
-                session.Save(new ProductReservation
+                cart.Products.Add(new ProductReservation
                                  {
                                      Cart = cart,
                                      ProductName = productName
