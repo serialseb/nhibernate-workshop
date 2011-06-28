@@ -32,7 +32,7 @@ namespace ShoppingCartWeb.Controllers
                                       Cart = cart,
                                       ProductName = productName
                                   };
-                s.SaveOrUpdate(cart);
+
                 s.SaveOrUpdate(product);
                 tx.Commit();
                 return Json(cart, JsonRequestBehavior.AllowGet);
