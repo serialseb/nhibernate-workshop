@@ -1,0 +1,13 @@
+c:\src\nhibernate\shop\ShoppingCartWeb\bin\hibernate.cfg.xml
+c:\src\nhibernate\shop\ShoppingCartWeb\bin\ShoppingCartWeb.dll
+c:\src\nhibernate\shop\ShoppingCartWeb\bin\ShoppingCartWeb.pdb
+c:\src\nhibernate\shop\ShoppingCartWeb\bin\Castle.Core.dll
+c:\src\nhibernate\shop\ShoppingCartWeb\bin\Iesi.Collections.dll
+c:\src\nhibernate\shop\ShoppingCartWeb\bin\NHibernate.ByteCode.Castle.dll
+c:\src\nhibernate\shop\ShoppingCartWeb\bin\NHibernate.dll
+c:\src\nhibernate\shop\ShoppingCartWeb\bin\Castle.Core.xml
+c:\src\nhibernate\shop\ShoppingCartWeb\bin\Iesi.Collections.pdb
+c:\src\nhibernate\shop\ShoppingCartWeb\bin\NHibernate.ByteCode.Castle.xml
+c:\src\nhibernate\shop\ShoppingCartWeb\obj\Debug\ResolveAssemblyReference.cache
+c:\src\nhibernate\shop\ShoppingCartWeb\obj\Debug\ShoppingCartWeb.dll
+c:\src\nhibernate\shop\ShoppingCartWeb\obj\Debug\ShoppingCartWeb.pdb

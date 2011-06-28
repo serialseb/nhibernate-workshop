@@ -1,0 +1,52 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="d:Miscellaneous Files/f:Global.asax.cs/l:C!?src?nhibernate?Exercises?Ex2-App1?Ex2-App1?Global.asax.cs" caret="1071" fromTop="36" />
+      <File id="d:Miscellaneous Files/f:hibernate.cfg.xml/l:C!?src?nhibernate?Exercises?Ex2-App1?Ex2-App1?hibernate.cfg.xml" caret="706" fromTop="13" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Views/f:Web.config" caret="139" fromTop="4" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:hibernate.cfg.xml" caret="508" fromTop="9" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductReservation.hbm.xml" caret="205" fromTop="4" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ShoppingCart.cs" caret="178" fromTop="7" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductReservation.cs" caret="92" fromTop="4" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="591" fromTop="20" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ShoppingCart.hbm.xml" caret="257" fromTop="7" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Controllers/f:ShoppingCartController.cs" caret="650" fromTop="19" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="d:Miscellaneous Files/f:hibernate.cfg.xml/l:C!?src?nhibernate?Exercises?Ex2-App1?Ex2-App1?hibernate.cfg.xml" caret="763" fromTop="15" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="1332" fromTop="38" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="2488" fromTop="62" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="1105" fromTop="14" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="2088" fromTop="48" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="1720" fromTop="31" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductReservation.hbm.xml" caret="116" fromTop="2" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:hibernate.cfg.xml" caret="759" fromTop="15" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="1580" fromTop="36" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:hibernate.cfg.xml" caret="338" fromTop="5" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ShoppingCart.hbm.xml" caret="171" fromTop="3" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductReservation.hbm.xml" caret="171" fromTop="3" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ShoppingCart.hbm.xml" caret="322" fromTop="9" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductReservation.cs" caret="205" fromTop="6" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="482" fromTop="18" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Controllers/f:ShoppingCartController.cs" caret="1263" fromTop="22" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Controllers/f:ShoppingCartController.cs" caret="1263" fromTop="37" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.9\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>
