@@ -2,20 +2,14 @@
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
 				   assembly="ShoppingCartWeb"
 				   namespace="ShoppingCartWeb.Models">
-	<class name="ProductReservation"
-		   table="ProductReservation">
+	<class name="OrderLine"
+		   table="OrderLines">
 		<id name="Id">
 			<generator class="hilo"/>
 		</id>
     <property name="Count" />
     
-    <set name="RegularBuyers"
-         cascade="all-delete-orphan"
-         batch-size="5"
-         >
-      <key column="RegularBuyerResId" />
-      <one-to-many class="Customer" />
-    </set>
+    
     <many-to-one name="Product"
                  class="Product"
                  column="ProductId"

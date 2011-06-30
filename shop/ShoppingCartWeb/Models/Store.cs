@@ -13,7 +13,7 @@ namespace ShoppingCartWeb.Models
         public virtual int Id { get; set; }
 
         public virtual IList<Product> TopSellers { get; set; }
-
+        public virtual IEnumerable<Order> Orders { get; set; }
         public virtual string Name { get; set; }
     }
 }

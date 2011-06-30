@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+				   assembly="ShoppingCartWeb"
+				   namespace="ShoppingCartWeb.Models">
+	<class name="Order" table="Orders">
+    
+		<id name="Id">
+			<generator class="hilo"/>
+		</id>
+    
+    <set name="Lines">
+      <key column="OrderId" />
+      <one-to-many class="OrderLine" />
+    </set>
+
+    <many-to-one name="Customer" />
+    <many-to-one name="Store" />
+
+
+  </class>
+</hibernate-mapping>

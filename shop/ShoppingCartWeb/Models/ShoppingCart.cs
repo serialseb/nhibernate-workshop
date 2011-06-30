@@ -7,16 +7,14 @@ namespace ShoppingCartWeb.Models
     {
         public ShoppingCart()
         {
-            Products = new List<ProductReservation>();
+            Products = new List<OrderLine>();
         }
         public virtual int Id { get; set; }
 
         public virtual DateTime? StartTime { get; set; }
         [System.Web.Script.Serialization.ScriptIgnore]
 
-        public  virtual
-            ICollection<ProductReservation>
-                Products { get; set; }
+        public  virtual ICollection<OrderLine> Products { get; set; }
 
         public virtual DateTime? LastModified { get; set; }
 

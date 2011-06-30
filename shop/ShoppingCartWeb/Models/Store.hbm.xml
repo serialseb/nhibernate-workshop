@@ -18,6 +18,11 @@
       </many-to-many>
     </list>
 
+    <set name="Orders">
+      <key column="StoreId" />
+      <one-to-many class="Order" />
+    </set>
+
     
 
 

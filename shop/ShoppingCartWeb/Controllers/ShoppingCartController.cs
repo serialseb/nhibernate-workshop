@@ -14,14 +14,18 @@ namespace ShoppingCartWeb.Controllers
             return Json(cart, JsonRequestBehavior.AllowGet);
         }
 
+        protected ActionResult Json<T>(Func<ISession, T> @do, params Action<T>[] thingsToDo)
+        {
+            return Json(Do(@do, thingsToDo));
+        }
         protected static T Do<T>(Func<ISession, T> @do, params Action<T>[] thingsToDo)
         {
-            
+
             var s = MvcApplication.NHibernateSession;
             using (var tx = s.BeginTransaction())
             {
                 T result = @do(s);
-                foreach(var a in thingsToDo)
+                foreach (var a in thingsToDo)
                     a(result);
                 tx.Commit();
                 return result;
@@ -41,7 +45,7 @@ namespace ShoppingCartWeb.Controllers
         }
         public ActionResult Rename(int id, string name)
         {
-            
+
             var session = MvcApplication.NHibernateSession;
             using (var tx = session.BeginTransaction())
             {
@@ -76,7 +80,7 @@ namespace ShoppingCartWeb.Controllers
             return Json(Do(
                 s => s.Get<ShoppingCart>(id),
                 cart => cart.Products.Remove(cart.Products.First(
-                    x=>x.Product != null && x.Product.Name==productName))
+                    x => x.Product != null && x.Product.Name == productName))
                             ));
         }
         public ActionResult ProductCount(int id)
@@ -90,8 +94,8 @@ namespace ShoppingCartWeb.Controllers
         //        .Products.Clear()
         //                    ));
         //}
-            
-            public ActionResult Index()
+
+        public ActionResult Index()
         {
             var session = MvcApplication.NHibernateSession;
             using (var tx = session.BeginTransaction())
@@ -109,14 +113,14 @@ namespace ShoppingCartWeb.Controllers
             using (var tx = session.BeginTransaction())
             {
                 var cart = session.Get<ShoppingCart>(id);
-                
+
                 cart.LastModified = DateTime.Now;
                 var product = session.QueryOver<Product>()
-                    .Where(x=>x.Name == productName)
+                    .Where(x => x.Name == productName)
                     .SingleOrDefault()
                     ?? new Product { Name = productName };
 
-                var prod = new ProductReservation
+                var prod = new OrderLine
                                              {
                                                  //Cart = cart,
                                                  Product = product
@@ -126,7 +130,7 @@ namespace ShoppingCartWeb.Controllers
 
                 tx.Commit();
                 return Json(cart);
-            }            
+            }
         }
 
         private delegate object MyMethod(ISession session);
@@ -135,43 +139,28 @@ namespace ShoppingCartWeb.Controllers
             // Func<ISession, object>
             // T MyMethod(ISession session)
             // delegate(ISession session) { return new T() }
-            
-            return Json(Do(
-                  session => session.Get<ProductReservation>(id)
-                ));
-        }
 
-        public ActionResult Regulars()
-        {
             return Json(Do(
-                s => (from cart in s.QueryOver<ShoppingCart>().List<ShoppingCart>()
-                      from prod in cart.Products
-                      from regular in prod.RegularBuyers
-                      select regular.Name
-                     )));
+                  session => session.Get<OrderLine>(id)
+                ));
         }
         public ActionResult CreateWithProduct(string productName)
         {
             var s = MvcApplication.NHibernateSession;
-            var product = new ProductReservation
-            {
-                //Cart = cart,
-                Product = new Product
-                            {
-                                Name = productName
-                            },
-            RegularBuyers =
-            {
-                new Customer{Name = "John Doe"},
-                new Customer{Name="Jeanne D'arc"}
-            }
+            var product = new OrderLine
+                              {
+                                  //Cart = cart,
+                                  Product = new Product
+                                                {
+                                                    Name = productName
+                                                }
                               };
             using (var tx = s.BeginTransaction())
             {
                 var cart = new ShoppingCart
                                         {
                                             StartTime = DateTime.Now,
-                                            Products = {product}
+                                            Products = { product }
                                         };
 
                 s.SaveOrUpdate(cart);

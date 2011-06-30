@@ -13,7 +13,7 @@ namespace ShoppingCartWeb.Controllers
         {
 
             return Json(Do(session =>
-                           from reservation in session.Query<ProductReservation>()
+                           from reservation in session.Query<OrderLine>()
                            let products = (from product in session.Query<Product>()
                                            where product.Name == productName
                                            select product)

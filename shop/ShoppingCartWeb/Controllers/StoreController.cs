@@ -12,7 +12,7 @@ namespace ShoppingCartWeb.Controllers
 {
     public class StoreController : DefaultController
     {
-        private QueryOver<Product, Product> _myquery = QueryOver.Of<Product>().Where(x => x.Name != null);
+        private QueryOver<Product, Product> _myquery = NHibernate.Criterion.QueryOver.Of<Product>().Where(x => x.Name != null);
 
         public ActionResult Index(int id)
         {

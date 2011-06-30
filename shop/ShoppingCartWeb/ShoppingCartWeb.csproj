@@ -75,15 +75,17 @@
   <ItemGroup>
     <Compile Include="Controllers\PartyController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\QueryOverController.cs" />
     <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Party.cs" />
     <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\ProductReservation.cs" />
+    <Compile Include="Models\OrderLine.cs" />
     <Compile Include="Models\QueryExtensions.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\Store.cs" />
@@ -109,12 +111,13 @@
     <Content Include="hibernate.cfg.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <EmbeddedResource Include="Models\ProductReservation.hbm.xml" />
+    <EmbeddedResource Include="Models\OrderLine.hbm.xml" />
     <EmbeddedResource Include="Models\ShoppingCart.hbm.xml" />
     <EmbeddedResource Include="Models\Product.hbm.xml" />
     <EmbeddedResource Include="Models\Customer.hbm.xml" />
     <EmbeddedResource Include="Models\Store.hbm.xml" />
     <EmbeddedResource Include="Models\Party.hbm.xml" />
+    <EmbeddedResource Include="Models\Order.hbm.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

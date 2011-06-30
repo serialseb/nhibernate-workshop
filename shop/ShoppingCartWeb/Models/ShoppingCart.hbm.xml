@@ -17,7 +17,7 @@
          cascade="all-delete-orphan"
          batch-size="5">
       <key column="CartId" />
-      <one-to-many class="ProductReservation" />
+      <one-to-many class="OrderLine" />
     </set>
 
 

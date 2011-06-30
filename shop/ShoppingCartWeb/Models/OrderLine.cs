@@ -3,11 +3,10 @@ using System.Collections.Generic;
 
 namespace ShoppingCartWeb.Models
 {
-    public class ProductReservation
+    public class OrderLine
     {
-        public ProductReservation()
+        public OrderLine()
         {
-            RegularBuyers = new List<Customer>();
         }
         public virtual int Id { get; set; }
 
@@ -16,8 +15,6 @@ namespace ShoppingCartWeb.Models
 
         public virtual int Count { get; set; }
 
-        public virtual ICollection<Customer> RegularBuyers { get; set; }
-        
         [System.Web.Script.Serialization.ScriptIgnore]
         public virtual Product Product { get; set; }
     }
