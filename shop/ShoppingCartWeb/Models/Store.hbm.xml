@@ -13,7 +13,7 @@
       
       <key column="StoreId" />
       <index type="int" column="Position" />
-      <many-to-many class="ProductItem" column="ProductId">
+      <many-to-many class="Product" column="ProductId">
         
       </many-to-many>
     </list>

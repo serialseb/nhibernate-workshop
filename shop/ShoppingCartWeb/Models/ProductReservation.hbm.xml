@@ -17,7 +17,7 @@
       <one-to-many class="Customer" />
     </set>
     <many-to-one name="Product"
-                 class="ProductItem"
+                 class="Product"
                  column="ProductId"
                  cascade="save-update" />
     

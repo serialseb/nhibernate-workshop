@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\PartyController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">
@@ -81,8 +82,9 @@
     </Compile>
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Party.cs" />
-    <Compile Include="Models\ProductItem.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductReservation.cs" />
+    <Compile Include="Models\QueryExtensions.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\Store.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,7 +111,7 @@
     </Content>
     <EmbeddedResource Include="Models\ProductReservation.hbm.xml" />
     <EmbeddedResource Include="Models\ShoppingCart.hbm.xml" />
-    <EmbeddedResource Include="Models\ProductItem.hbm.xml" />
+    <EmbeddedResource Include="Models\Product.hbm.xml" />
     <EmbeddedResource Include="Models\Customer.hbm.xml" />
     <EmbeddedResource Include="Models\Store.hbm.xml" />
     <EmbeddedResource Include="Models\Party.hbm.xml" />

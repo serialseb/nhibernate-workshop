@@ -111,10 +111,10 @@ namespace ShoppingCartWeb.Controllers
                 var cart = session.Get<ShoppingCart>(id);
                 
                 cart.LastModified = DateTime.Now;
-                var product = session.QueryOver<ProductItem>()
+                var product = session.QueryOver<Product>()
                     .Where(x=>x.Name == productName)
                     .SingleOrDefault()
-                    ?? new ProductItem { Name = productName };
+                    ?? new Product { Name = productName };
 
                 var prod = new ProductReservation
                                              {
@@ -156,7 +156,7 @@ namespace ShoppingCartWeb.Controllers
             var product = new ProductReservation
             {
                 //Cart = cart,
-                Product = new ProductItem
+                Product = new Product
                             {
                                 Name = productName
                             },

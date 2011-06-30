@@ -7,12 +7,12 @@ namespace ShoppingCartWeb.Models
     {
         public Store()
         {
-            TopSellers = new List<ProductItem>();
+            TopSellers = new List<Product>();
 
         }
         public virtual int Id { get; set; }
 
-        public virtual IList<ProductItem> TopSellers { get; set; }
+        public virtual IList<Product> TopSellers { get; set; }
 
         public virtual string Name { get; set; }
     }

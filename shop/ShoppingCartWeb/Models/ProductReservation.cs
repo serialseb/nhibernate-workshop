@@ -19,6 +19,6 @@ namespace ShoppingCartWeb.Models
         public virtual ICollection<Customer> RegularBuyers { get; set; }
         
         [System.Web.Script.Serialization.ScriptIgnore]
-        public virtual ProductItem Product { get; set; }
+        public virtual Product Product { get; set; }
     }
 }
