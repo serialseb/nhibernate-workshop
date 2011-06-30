@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+				   assembly="ShoppingCartWeb"
+				   namespace="ShoppingCartWeb.Models">
+  <class name="Store"
+		   table="Stores" >
+    <id name="Id">
+      <generator class="hilo"/>
+    </id>
+    <property name="Name"/>
+
+    <list cascade="all" name="TopSellers" batch-size="20" table="TopSellers2">
+      
+      <key column="StoreId" />
+      <index type="int" column="Position" />
+      <many-to-many class="ProductItem" column="ProductId">
+        
+      </many-to-many>
+    </list>
+
+    
+
+
+  </class>
+</hibernate-mapping>

@@ -5,17 +5,25 @@
 	<class name="ProductReservation"
 		   table="ProductReservation">
 		<id name="Id">
-			<generator class="identity"/>
+			<generator class="hilo"/>
 		</id>
     <property name="Count" />
-
+    
+    <set name="RegularBuyers"
+         cascade="all-delete-orphan"
+         batch-size="5"
+         >
+      <key column="RegularBuyerResId" />
+      <one-to-many class="Customer" />
+    </set>
     <many-to-one name="Product"
-                 class="Product"
+                 class="ProductItem"
                  column="ProductId"
                  cascade="save-update" />
-		<many-to-one name="Cart"
+    
+		<!--<many-to-one name="Cart"
                  class="ShoppingCart"
                  column="CartId"
-                 cascade="save-update" />
+                 cascade="save-update" />-->
 	</class>
 </hibernate-mapping>

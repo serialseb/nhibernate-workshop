@@ -2,16 +2,43 @@
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
 				   assembly="ShoppingCartWeb"
 				   namespace="ShoppingCartWeb.Models">
-	<class name="ShoppingCart"
-		   table="ShoppingCart">
-		<id name="Id">
-			<generator class="identity"/>
-		</id>
-    <property name="StartTime" />
-    <property name="LastModified" />
-    <set name="Products" cascade="all">
+  <class name="ShoppingCart"
+		   table="ShoppingCart" >
+    <id name="Id">
+      <generator class="hilo"/>
+    </id>
+    <property name="StartTime" update="false" />
+    <property name="LastModified" insert="false" />
+    <property name="Title" />
+    <property name="ExternalSyncId" generated="always" />
+
+    
+    <set name="Products"
+         cascade="all-delete-orphan"
+         batch-size="5">
       <key column="CartId" />
       <one-to-many class="ProductReservation" />
     </set>
-	</class>
+
+
+
+
+
+
+
+    <many-to-one class="Customer"
+                 name="Owner"
+                 column="CustomerId"
+                 cascade="save-update"
+                 lazy="false"
+                 fetch="join" />
+
+
+
+
+
+
+
+
+  </class>
 </hibernate-mapping>

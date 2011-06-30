@@ -11,32 +11,54 @@
       <File id="d:Miscellaneous Files/f:Global.asax.cs/l:C!?src?nhibernate?Exercises?Ex2-App1?Ex2-App1?Global.asax.cs" caret="1071" fromTop="36" />
       <File id="d:Miscellaneous Files/f:hibernate.cfg.xml/l:C!?src?nhibernate?Exercises?Ex2-App1?Ex2-App1?hibernate.cfg.xml" caret="706" fromTop="13" />
       <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Views/f:Web.config" caret="139" fromTop="4" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:hibernate.cfg.xml" caret="508" fromTop="9" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductReservation.hbm.xml" caret="205" fromTop="4" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ShoppingCart.cs" caret="178" fromTop="7" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductReservation.cs" caret="92" fromTop="4" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="591" fromTop="20" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ShoppingCart.hbm.xml" caret="257" fromTop="7" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Controllers/f:ShoppingCartController.cs" caret="650" fromTop="19" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ShoppingCart.hbm.xml" caret="364" fromTop="1" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductReservation.hbm.xml" caret="468" fromTop="10" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ShoppingCart.cs" caret="211" fromTop="2" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductReservation.cs" caret="0" fromTop="0" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Store.cs" caret="358" fromTop="15" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Controllers/f:StoreController.cs" caret="306" fromTop="5" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Controllers/f:ShoppingCartController.cs" caret="5385" fromTop="2" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Store.hbm.xml" caret="247" fromTop="7" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:hibernate.cfg.xml" caret="558" fromTop="8" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Customer.hbm.xml" caret="268" fromTop="6" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.cs" caret="166" fromTop="6" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductItem.hbm.xml" caret="501" fromTop="16" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="1076" fromTop="25" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductItem.cs" caret="169" fromTop="7" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Controllers/f:PartyController.cs" caret="1159" fromTop="10" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="2177" fromTop="13" />
     </RecentFiles>
     <RecentEdits>
-      <File id="d:Miscellaneous Files/f:hibernate.cfg.xml/l:C!?src?nhibernate?Exercises?Ex2-App1?Ex2-App1?hibernate.cfg.xml" caret="763" fromTop="15" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="1332" fromTop="38" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="2488" fromTop="62" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="1105" fromTop="14" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="2088" fromTop="48" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="1720" fromTop="31" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductReservation.hbm.xml" caret="116" fromTop="2" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:hibernate.cfg.xml" caret="759" fromTop="15" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="1580" fromTop="36" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:hibernate.cfg.xml" caret="338" fromTop="5" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ShoppingCart.hbm.xml" caret="171" fromTop="3" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductReservation.hbm.xml" caret="171" fromTop="3" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ShoppingCart.hbm.xml" caret="322" fromTop="9" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductReservation.cs" caret="205" fromTop="6" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="482" fromTop="18" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Controllers/f:ShoppingCartController.cs" caret="1263" fromTop="22" />
-      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Controllers/f:ShoppingCartController.cs" caret="1263" fromTop="37" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductItem.hbm.xml" caret="561" fromTop="14" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductItem.hbm.xml" caret="561" fromTop="11" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Store.hbm.xml" caret="595" fromTop="19" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Store.hbm.xml" caret="434" fromTop="12" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Controllers/f:StoreController.cs" caret="750" fromTop="16" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Store.hbm.xml" caret="269" fromTop="7" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductItem.cs" caret="152" fromTop="7" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductItem.hbm.xml" caret="270" fromTop="7" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:Global.asax.cs" caret="1844" fromTop="4" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/f:hibernate.cfg.xml" caret="500" fromTop="7" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Customer.hbm.xml" caret="295" fromTop="6" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.cs" caret="347" fromTop="19" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.cs" caret="35" fromTop="1" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="513" fromTop="9" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="479" fromTop="13" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="525" fromTop="7" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:ProductItem.hbm.xml" caret="501" fromTop="16" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="591" fromTop="4" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="684" fromTop="8" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Controllers/f:PartyController.cs" caret="825" fromTop="20" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="806" fromTop="9" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="1045" fromTop="15" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="942" fromTop="7" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="847" fromTop="2" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="1463" fromTop="13" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Controllers/f:PartyController.cs" caret="1254" fromTop="20" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Controllers/f:PartyController.cs" caret="1159" fromTop="17" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="1278" fromTop="5" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="1771" fromTop="6" />
+      <File id="13A2BCD3-8CC3-4513-A72A-4E403CB964A9/d:Models/f:Party.hbm.xml" caret="2177" fromTop="8" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -49,4 +71,48 @@
     <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.9\bin\net-2.0\</NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:NHibernate.ISession">
+      <Item value="Save`0" priority="0" />
+      <Item value="SaveOrUpdate`0" priority="1" />
+      <Item value="Get`1" priority="0" />
+      <Item value="QueryOver`1" priority="1" />
+      <Item value="SetBatchSize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="ProductReservation`0" priority="1" />
+      <Item value="Cart" priority="0" />
+      <Item value="DateTime`0" priority="1" />
+      <Item value="AllowGet" priority="1" />
+      <Item value="productName" priority="0" />
+      <Item value="Serialization" priority="0" />
+      <Item value="ScriptIgnore" priority="0" />
+      <Item value="store" priority="0" />
+      <Item value="NHibernateSession" priority="0" />
+      <Item value="FirstName" priority="0" />
+      <Item value="CompanyName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShoppingCartWeb.Models.ShoppingCart">
+      <Item value="Products" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.IQueryOver`2">
+      <Item value="Where`0" priority="0" />
+      <Item value="SingleOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShoppingCartWeb.Models.Product">
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShoppingCartWeb.Models.Store">
+      <Item value="TopSellers" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShoppingCartWeb.Models.ProductItem">
+      <Item value="TechnicalAttributes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShoppingCartWeb.Models.Party">
+      <Item value="Location" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>

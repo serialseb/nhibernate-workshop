@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+									 assembly="ShoppingCartWeb"
+									 namespace="ShoppingCartWeb.Models">
+  <!--discriminator 
+	table per hierarchy-->
+  
+  
+  <!--<class name="Party"
+				 abstract="true"
+				 table="Parties">
+    
+		<id name="Id">
+			<generator class="hilo"/>
+		</id>
+    
+		<discriminator column="PartyType"
+									 not-null="true"
+									 type="System.String"/>
+    
+    <property name="Location" />
+    
+    
+		<subclass
+			name="Person"
+			discriminator-value="IIzPerson">
+      
+			<property name="FirstName"/>
+      
+		</subclass>
+
+		<subclass
+			name="Company"
+			discriminator-value="IHasCorporate">
+      
+			<property name="CompanyName"/>
+		</subclass>
+	</class>-->
+
+
+  <!--table per concrete class-->
+  
+  <!--<class name="Person"
+				 table="People">
+		<id name="Id">
+			<generator class="hilo"/>
+		</id>
+    <property name="Location" />
+		<property name="FirstName"/>
+	</class>
+
+  
+  
+  
+	<class name="Company"
+				 table="Companies">
+		<id name="Id">
+			<generator class="identity"/>
+		</id>
+    <property name="Location" />
+    <property name="CompanyName"/>
+	</class>-->
+
+
+
+  <!--table per subclass-->
+
+  <!--<class name="Party"
+				 abstract="true"
+				 table="Parties">
+    
+		<id name="Id">
+			<generator class="hilo"/>
+		</id>
+    
+    <property name="Location" />
+    
+    
+		<joined-subclass
+			table="People"
+			name="Person">
+			<key column="PartyId"/>
+			<property name="FirstName"/>
+		</joined-subclass>
+
+		<joined-subclass
+			table="Companies"
+			name="Company">
+			<key column="PartyId"/>
+			<property name="CompanyName"/>
+		</joined-subclass>
+	</class>-->
+
+
+
+  <class name="Party"
+				 abstract="true">
+    <id name="Id">
+      <generator class="hilo"/>
+    </id>
+    <property name="Location" />
+
+
+    <union-subclass
+			table="People"
+			name="Person">
+      <property name="FirstName"/>
+    </union-subclass>
+
+    <union-subclass
+			table="Companies"
+			name="Company">
+      <property name="CompanyName"/>
+    </union-subclass>
+  </class>
+</hibernate-mapping>

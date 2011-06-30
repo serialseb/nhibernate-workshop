@@ -61,6 +61,7 @@ namespace ShoppingCartWeb
         protected void Application_BeginRequest()
         {
             NHibernateSession = _sessionFactory.OpenSession();
+            NHibernateSession.SetBatchSize(20);
         }
         protected void Application_EndRequest()
         {

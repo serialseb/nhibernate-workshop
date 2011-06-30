@@ -73,13 +73,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\PartyController.cs" />
     <Compile Include="Controllers\ShoppingCartController.cs" />
+    <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Party.cs" />
+    <Compile Include="Models\ProductItem.cs" />
     <Compile Include="Models\ProductReservation.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
+    <Compile Include="Models\Store.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -104,7 +109,10 @@
     </Content>
     <EmbeddedResource Include="Models\ProductReservation.hbm.xml" />
     <EmbeddedResource Include="Models\ShoppingCart.hbm.xml" />
-    <EmbeddedResource Include="Models\Product.hbm.xml" />
+    <EmbeddedResource Include="Models\ProductItem.hbm.xml" />
+    <EmbeddedResource Include="Models\Customer.hbm.xml" />
+    <EmbeddedResource Include="Models\Store.hbm.xml" />
+    <EmbeddedResource Include="Models\Party.hbm.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -156,7 +164,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>65157</DevelopmentServerPort>
+          <DevelopmentServerPort>19673</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

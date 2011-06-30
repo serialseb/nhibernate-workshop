@@ -6,6 +6,7 @@
     <property name="connection.connection_string">
       Server=(local)\SQLExpress;initial catalog=NH_Cart;Integrated Security=SSPI
     </property>
+    <property name="adonet.batch_size">100</property>
     <property name="connection.driver_class">
       NHibernate.Driver.SqlClientDriver
     </property>

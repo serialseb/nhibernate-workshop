@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+				   assembly="ShoppingCartWeb"
+				   namespace="ShoppingCartWeb.Models">
+	<class name="ProductItem"
+		   table="Product">
+		<id name="Id">
+			<generator class="hilo"/>
+		</id>
+    <property name="Name" />
+
+    <map name="TechnicalAttributes"
+         cascade="all"
+         table ="ProductTechnicalDetails">
+      <key column="ProductId" />
+      
+      <index type="string" column="Name" />
+      
+      <element type="string" column="Value" />
+    </map>
+         
+	</class>
+</hibernate-mapping>
